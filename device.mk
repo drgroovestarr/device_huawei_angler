@@ -423,7 +423,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=4 \
     dalvik.vm.dex2oat-threads=4 \
-    dalvik.vm.image-dex2oat-threads=4
+    dalvik.vm.image-dex2oat-threads=6
 
 # old-apns.conf
 PRODUCT_COPY_FILES += \

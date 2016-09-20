@@ -484,3 +484,7 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4358
 PRODUCT_COPY_FILES += \
     device/huawei/angler/location/etc/gps.conf:system/etc/gps.conf:qcom
 
+
+# Telephony-ext
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext

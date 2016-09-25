@@ -265,6 +265,10 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
+
 # Power HAL
 PRODUCT_PACKAGES += \
     power.angler \

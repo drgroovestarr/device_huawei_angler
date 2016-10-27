@@ -442,6 +442,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.image-dex2oat-threads=8
 
+
+# Set bluetooth soc to rome
+PRODUCT_PROPERTY_OVERRIDES += \
+    qcom.bluetooth.soc=rome
+
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 

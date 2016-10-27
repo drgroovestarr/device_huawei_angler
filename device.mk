@@ -206,6 +206,10 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     mm-qcamera-app
 
+# Front Video Recording
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.cpp.duplication=false
+
 # GPS
 PRODUCT_PACKAGES += \
     libgps.utils \

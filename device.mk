@@ -425,10 +425,6 @@ PRODUCT_COPY_FILES += \
 
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-ifeq (,$(filter aosp_angler, $(TARGET_PRODUCT)))
-PRODUCT_PACKAGES += \
-    QXDMLoggerV2
-endif # aosp_angler
 
 PRODUCT_COPY_FILES += \
     device/huawei/angler/init.angler.diag.rc.userdebug:root/init.angler.diag.rc

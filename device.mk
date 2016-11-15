@@ -210,8 +210,9 @@ PRODUCT_PACKAGES += \
     libmmjpeg_interface \
     libqomx_core \
     libmm-qcamera \
-    mm-qcamera-app
-
+    mm-qcamera-app \
+    SnapdragonCamera
+    
 # Front Video Recording
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false

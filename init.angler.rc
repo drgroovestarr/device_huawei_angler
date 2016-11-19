@@ -254,6 +254,8 @@ on property:sys.boot_completed=1
     # from franciscofranco
     setprop dalvik.vm.heapminfree 2m
 
+    # cpuset
+    write /dev/cpuset/background/cpus 0-2
 
 # Search the laser device under /dev/input, then create symlink
 service InputEventFind /vendor/bin/InputEventFind

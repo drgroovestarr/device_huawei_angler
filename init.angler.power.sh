@@ -179,7 +179,9 @@ write /sys/module/msm_thermal/core_control/enabled 1
 get-set-forall /sys/devices/soc.0/qcom,bcl.*/mode disable
 get-set-forall /sys/devices/soc.0/qcom,bcl.*/hotplug_mask $bcl_hotplug_mask
 get-set-forall /sys/devices/soc.0/qcom,bcl.*/hotplug_soc_mask $bcl_hotplug_soc_mask
-get-set-forall /sys/devices/soc.0/qcom,bcl.*/mode enable
+chown system system /sys/devices/soc.0/qcom,bcl.*/mode
+chmod 0664 /sys/devices/soc.0/qcom,bcl.*/mode
+get-set-forall /sys/devices/soc.0/qcom,bcl.*/mode disable
 
 # change GPU initial power level from 305MHz(level 4) to 180MHz(level 5) for power savings
 write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 5

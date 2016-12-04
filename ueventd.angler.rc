@@ -1,3 +1,5 @@
+/dev/erandom              0666   root       root
+/dev/frandom              0666   root       root
 /dev/genlock              0666   system     system
 /dev/kgsl                 0666   system     system
 /dev/kgsl-3d0             0666   system     system

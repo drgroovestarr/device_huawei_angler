@@ -516,6 +516,10 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4358
 PRODUCT_COPY_FILES += \
     device/huawei/angler/gps.conf:system/etc/gps.conf:qcom
 
+# Enable Google Assistant
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
+
 # b/28992626
 # For app investigation, make ASAN-lite only sanitize 32-bit.
 ifeq (true,$(SANITIZE_LITE))

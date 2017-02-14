@@ -146,5 +146,6 @@ TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
 TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
 
 USE_CLANG_PLATFORM_BUILD := true
+SDCLANG := true
 
 -include vendor/huawei/angler/BoardConfigVendor.mk

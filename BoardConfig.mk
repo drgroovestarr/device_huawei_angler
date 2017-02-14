@@ -138,5 +138,8 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 NXP_CHIP_TYPE := 2
 
 USE_CLANG_PLATFORM_BUILD := true
+SDCLANG := true
+SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
+SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
 
 -include vendor/huawei/angler/BoardConfigVendor.mk

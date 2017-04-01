@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "github",
+    "repository": "Flash-ROM/kernel_huawei_angler",
+    "target_path": "kernel/huawei/angler",
+    "branch":      "n7.1.1-flash"
+  },
+  {
+    "remote": "github",
+    "repository": "drgroovestarr/vendor_angler",
+    "target_path": "vendor/huawei",
+    "branch":      "n7.1"
+  },
+  {
+    "remote": "github",
+    "repository": "drgroovestarr/packages_apps_SnapdragonCamera",
+    "target_path": "packages/apps/SnapdragonCamera",
+    "branch":      "n7.1"
+  }
+]

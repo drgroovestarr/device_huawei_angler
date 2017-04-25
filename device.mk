@@ -320,6 +320,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     libnfc-nci \
+    nfc_nci.pn54x.default \
     NfcNci \
     Tag \
     nfc_nci.angler \

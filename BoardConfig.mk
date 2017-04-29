@@ -152,6 +152,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 NXP_CHIP_TYPE := 2
 
 USE_CLANG_PLATFORM_BUILD := true
+TARGET_USE_SDCLANG := true
 
 TARGET_FS_CONFIG_GEN += device/huawei/angler/config.fs
 

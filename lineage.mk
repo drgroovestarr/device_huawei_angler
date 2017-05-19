@@ -5,6 +5,14 @@ TARGET_SCREEN_WIDTH := 1440
 # Inherit some common stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
+# Copy over our ramdisk files
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/ramdisk/init.flash.rc:root/init.flash.rc \
+    vendor/cm/prebuilt/ramdisk/init.profiles.rc:root/init.profiles.rc \
+    vendor/cm/prebuilt/ramdisk/init.profiles.sh:root/init.profiles.sh \
+    vendor/cm/prebuilt/ramdisk/init.special_power.sh:root/init.special_power.sh \
+    vendor/cm/prebuilt/ramdisk/msm_irqbalance.conf:root/msm_irqbalance.conf
+
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 

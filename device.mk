@@ -593,3 +593,9 @@ $(call add-product-sanitizer-module-config,mm-qcamera-daemon,never)
 # b/36201281
 $(call add-product-sanitizer-module-config,thermal-engine,never)
 $(call add-product-sanitizer-module-config,qmuxd,never)
+
+# Open GApps
+ifneq ($(HAS_GAPPS),false)
+$(call inherit-product-if-exists, device/huawei/angler/opengapps.mk)
+$(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
+endif

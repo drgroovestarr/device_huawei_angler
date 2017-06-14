@@ -431,6 +431,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.image-dex2oat-threads=6
 
+# Sdcardfs
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
+
 # old-apns.conf
 PRODUCT_COPY_FILES += \
     device/huawei/angler/old-apns-conf.xml:system/etc/old-apns-conf.xml

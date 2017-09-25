@@ -440,6 +440,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.frp.pst=/dev/block/platform/soc.0/f9824900.sdhci/by-name/frp
 
+# Enable dev mode Ambient burn-in protection
+# see PhoneWindoManager for radius and offset values
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.force_burn_in=true
+
 # For SPN display
 PRODUCT_COPY_FILES += \
     device/huawei/angler/spn-conf.xml:system/etc/spn-conf.xml

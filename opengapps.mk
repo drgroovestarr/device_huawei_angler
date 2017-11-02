@@ -1,13 +1,19 @@
 # Explanation: https://github.com/opengapps/aosp_build
 
 # Base package
-GAPPS_VARIANT := micro
+GAPPS_VARIANT := mini
 
 # Extra desired packages
 PRODUCT_PACKAGES += \
+	CloudPrint2 \
+	Drive \
 	GoogleCamera \
 	LatinImeGoogle \
-	PrebuiltBugle
+	Music2 \
+	PrebuiltBugle \
+	PrebuiltKeep \
+	Street \
+	Wallpapers
 
 # Packages from vendor
 PRODUCT_PACKAGES += \
@@ -16,11 +22,8 @@ PRODUCT_PACKAGES += \
 
 # Excluded packages
 GAPPS_EXCLUDED_PACKAGES += \
-        CalendarGooglePrebuilt \
 	GooglePackageInstaller \
-	PrebuiltGmail \
 	GoogleHome
 
 # Messanging override
 APPS_FORCE_MMS_OVERRIDES := true
-
